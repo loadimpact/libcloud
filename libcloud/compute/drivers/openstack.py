@@ -1198,6 +1198,9 @@ class OpenStack_1_1_NodeDriver(OpenStackNodeDriver):
         else:
             server_params['flavorRef'] = node.extra.get('flavorId')
 
+        if 'ex_disc_config' in kwargs:
+            server_params['OS-DCF:diskConfig'] = kwargs.get('ex_disc_config')
+
         return server_params
 
     def _files_to_personality(self, files):
