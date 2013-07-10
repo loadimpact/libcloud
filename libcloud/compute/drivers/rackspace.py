@@ -164,11 +164,11 @@ class RackspaceNodeDriver(OpenStack_1_1_NodeDriver):
             self.api_name = 'rackspacenovalon'
 
         self.connectionCls._auth_version = '2.0'
-        self.connectionCls.get_endpoint_args = \
-            ENDPOINT_ARGS_MAP[datacenter]
 
         self.datacenter = datacenter
 
         super(RackspaceNodeDriver, self).__init__(key=key, secret=secret,
                                                   secure=secure, host=host,
                                                   port=port, **kwargs)
+
+        self.connection.get_endpoint_args = ENDPOINT_ARGS_MAP[datacenter]

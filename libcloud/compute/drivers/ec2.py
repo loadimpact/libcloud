@@ -1434,6 +1434,9 @@ class EC2NodeDriver(BaseEC2NodeDriver):
 
         self.connectionCls.host = details['endpoint']
 
+        if not host:
+            host = details['endpoint']
+
         super(EC2NodeDriver, self).__init__(key=key, secret=secret,
                                             secure=secure, host=host,
                                             port=port, **kwargs)
