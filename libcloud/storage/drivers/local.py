@@ -25,6 +25,7 @@ import shutil
 import sys
 
 try:
+    import lockfile
     from lockfile import mkdirlockfile
 except ImportError:
     raise ImportError('Missing lockfile dependency, you can install it ' \
