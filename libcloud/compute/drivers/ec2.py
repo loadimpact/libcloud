@@ -604,6 +604,66 @@ INSTANCE_TYPES = {
             'cpu': 32
         }
     },
+    'r4.large': {
+        'id': 'r4.large',
+        'name': 'Memory Optimized Large instance',
+        'ram': GiB(15.25),
+        'disk': 0,  # EBS Only
+        'bandwidth': None,
+        'extra': {
+            'cpu': 2
+        }
+    },
+    'r4.xlarge': {
+        'id': 'r4.xlarge',
+        'name': 'Memory Optimized Extra Large instance',
+        'ram': GiB(30.5),
+        'disk': 0,  # EBS Only
+        'bandwidth': None,
+        'extra': {
+            'cpu': 4
+        }
+    },
+    'r4.2xlarge': {
+        'id': 'r4.2xlarge',
+        'name': 'Memory Optimized Double Extra Large instance',
+        'ram': GiB(61),
+        'disk': 0,  # EBS Only
+        'bandwidth': None,
+        'extra': {
+            'cpu': 8
+        }
+    },
+    'r4.4xlarge': {
+        'id': 'r4.4xlarge',
+        'name': 'Memory Optimized Quadruple Extra Large instance',
+        'ram': GiB(122),
+        'disk': 0,  # EBS Only
+        'bandwidth': None,
+        'extra': {
+            'cpu': 16
+        }
+    },
+    'r4.8xlarge': {
+        'id': 'r4.8xlarge',
+        'name': 'Memory Optimized Eight Extra Large instance',
+        'ram': GiB(244),
+        'disk': 0,  # EBS Only
+        'bandwidth': None,
+        'extra': {
+            'cpu': 32
+        }
+    },
+    'r4.16xlarge': {
+        'id': 'r4.8xlarge',
+        'name': 'Memory Optimized Eight Extra Large instance',
+        'ram': GiB(488),
+        'disk': 0,  # EBS Only
+        'bandwidth': None,
+        'extra': {
+            'cpu': 64
+        }
+    },
     # Burstable Performance General Purpose
     't2.nano': {
         'id': 't2.nano',
@@ -653,6 +713,16 @@ INSTANCE_TYPES = {
         'bandwidth': None,
         'extra': {
             'cpu': 2
+        }
+    },
+    'x1.16xlarge': {
+        'id': 'x1.16xlarge',
+        'name': 'Memory Optimized Sixteen Extra Large instance',
+        'ram': GiB(976),
+        'disk': 1920,  # GB
+        'bandwidth': None,
+        'extra': {
+            'cpu': 64
         }
     },
     'x1.32xlarge': {
@@ -914,6 +984,46 @@ REGION_DETAILS = {
             'x1.32xlarge'
         ]
     },
+    # Canada (Central) Region
+    'ca-central-1': {
+        'endpoint': 'ec2.ca-central-1.amazonaws.com',
+        'api_name': 'ec2_ca_central_1',
+        'country': 'Canada',
+        'signature_version': '4',
+        'instance_types': [
+            'c4.large',
+            'c4.xlarge',
+            'c4.2xlarge',
+            'c4.4xlarge',
+            'c4.8xlarge',
+            'm4.large',
+            'm4.xlarge',
+            'm4.2xlarge',
+            'm4.4xlarge',
+            'm4.10xlarge',
+            'm4.16xlarge',
+            'd2.xlarge',
+            'd2.2xlarge',
+            'd2.4xlarge',
+            'd2.8xlarge',
+            'r4.large',
+            'r4.xlarge',
+            'r4.2xlarge',
+            'r4.4xlarge',
+            'r4.8xlarge',
+            'r4.16xlarge',
+            't1.micro',
+            't2.nano',
+            't2.micro',
+            't2.small',
+            't2.medium',
+            't2.large',
+            't2.xlarge',
+            't2.2xlarge',
+            'x1.16xlarge',
+            'x1.32xlarge'
+        ]
+    },
     # EU (Ireland) Region
     'eu-west-1': {
         'endpoint': 'ec2.eu-west-1.amazonaws.com',
@@ -973,6 +1083,46 @@ REGION_DETAILS = {
             't2.small',
             't2.medium',
             't2.large',
+            'x1.32xlarge'
+        ]
+    },
+    # EU (London) Region
+    'eu-west-2': {
+        'endpoint': 'ec2.eu-west-2.amazonaws.com',
+        'api_name': 'ec2_eu_west_2',
+        'country': 'United Kingdom',
+        'signature_version': '4',
+        'instance_types': [
+            'c4.large',
+            'c4.xlarge',
+            'c4.2xlarge',
+            'c4.4xlarge',
+            'c4.8xlarge',
+            'm4.large',
+            'm4.xlarge',
+            'm4.2xlarge',
+            'm4.4xlarge',
+            'm4.10xlarge',
+            'm4.16xlarge',
+            'd2.xlarge',
+            'd2.2xlarge',
+            'd2.4xlarge',
+            'd2.8xlarge',
+            'r4.large',
+            'r4.xlarge',
+            'r4.2xlarge',
+            'r4.4xlarge',
+            'r4.8xlarge',
+            'r4.16xlarge',
+            't1.micro',
+            't2.nano',
+            't2.micro',
+            't2.small',
+            't2.medium',
+            't2.large',
+            't2.xlarge',
+            't2.2xlarge',
+            'x1.16xlarge',
             'x1.32xlarge'
         ]
     },
