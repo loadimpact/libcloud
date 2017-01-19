@@ -16,11 +16,15 @@ It allows users to rent virtual servers in more than 9 regions such as:
 * US East (Ohio) Region
 * US West (Oregon) Region
 * US West (Northern California) Region
+* Canada (Central) Region
 * EU West (Ireland) Region
+* EU West (London) Region
 * EU Central (Frankfurt) Region
 * Asia Pacific (Singapore) Region
 * Asia Pacific (Sydney) Region
+* Asia Pacific (Seoul) Region
 * Asia Pacific (Tokyo) Region
+* Asia Pacific (Mumbai) Region
 * South America (Sao Paulo) Region
 
 Using temporary security credentials
