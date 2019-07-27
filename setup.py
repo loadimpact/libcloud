@@ -128,7 +128,7 @@ needs_pytest = {'pytest', 'test', 'ptr'}.intersection(sys.argv)
 pytest_runner = ['pytest-runner'] if needs_pytest else []
 
 setup(
-    name='apache-libcloud',
+    name='apache-libcloud-loadimpact',
     version=read_version_string(),
     description='A standard Python library that abstracts away differences' +
                 ' among multiple cloud provider APIs. For more information' +
